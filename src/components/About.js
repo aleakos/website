@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import sanityClient from '../client.js';
-import space from '../space.jpg';
 import imageUrlBuilder from '@sanity/image-url';
 import BlockContent from '@sanity/block-content-to-react';
 
@@ -17,7 +16,6 @@ const About = () => {
         `*[_type == "author"]{
       name,
       bio,
-      "authorImage": image.asset->url,
         }`
       )
       .then((data) => setAuthor(data[0]))
@@ -28,28 +26,20 @@ const About = () => {
 
   return (
     <main className="relative">
-      <img src={space} alt="space" className="absolute w-full" />
-      <div className="p-10 lg:pt-48 container mx-auto relative">
-        <section className="bg-green-800 rounded-lg shadow-2xl lg:flex p-20">
-          <img
-            src={urlFor(author.authorImage).url()}
-            className="rounded w-32 h-32 lg:w-64 lg:h-64 mr-8"
-            alt={author.name}
-          />
-          <div className="text-lg flex flex-col justify-center">
-            <h1 className="plex text-6xl text-green-300 mb-4">
-              Hey there. I'm{' '}
-              <span className="text-green-100">{author.name}</span>
-            </h1>
-            <div className="prose lg:prose-xl text-white">
-              <BlockContent
-                blocks={author.bio}
-                projectId="upmie68t"
-                dataset="production"
-              />
-            </div>
+      <div className="p-10 container mx-auto relative">
+        <div className="text-lg flex flex-col justify-center">
+          <h1 className="plex text-6xl text-gray-800 mb-4">
+            hey there. i'm{' '}
+            <span className="text-purple-400">{author.name}</span>
+          </h1>
+          <div className=" lowercase plex prose lg:prose-xl text-white">
+            <BlockContent
+              blocks={author.bio}
+              projectId="upmie68t"
+              dataset="production"
+            />
           </div>
-        </section>
+        </div>
       </div>
     </main>
   );
