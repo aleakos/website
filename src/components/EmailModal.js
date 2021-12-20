@@ -11,7 +11,7 @@ const EmailModal = () => {
     <>
       <div
         onClick={() => setShowModal(true)}
-        className="lowercase text-gray-800 dark:text-white font-black text-3xl flex items-center hover:text-purple-400 hover:cursor-pointer"
+        className="py-3 px-6 my-6 lowercase text-gray-800 dark:text-white font-black text-3xl flex items-center hover:text-purple-400 hover:cursor-pointer"
       >
         <svg
           width="30"
