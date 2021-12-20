@@ -1,6 +1,7 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
+  darkMode: 'class',
   content: ['./src/**/*.{html,js}'],
   theme: {
     extend: {
@@ -117,6 +118,9 @@ module.exports = {
         },
       },
     },
-    plugins: [require('@tailwindcss/typography')],
+    plugins: [
+      require('@tailwindcss/typography'),
+      require('@themesberg/flowbite/plugin'),
+    ],
   },
 };
