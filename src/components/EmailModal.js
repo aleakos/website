@@ -32,12 +32,12 @@ const EmailModal = () => {
               <div className="border-0 shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 {/*header*/}
                 <div className="flex items-start justify-between p-5">
-                  <h3 className="plex text-3xl font-semibold">contact form.</h3>
+                  <h3 className="plex text-4xl font-semibold">contact form.</h3>
                   <button
-                    className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                    className="plex inline-block p-1 ml-auto bg-transparent border-0 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                     onClick={() => setShowModal(false)}
                   >
-                    <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                    <span className=" text-gray-300 h-6 w-6 text-2xl block outline-none focus:outline-none">
                       ×
                     </span>
                   </button>
@@ -110,7 +110,7 @@ const EmailModal = () => {
                   </form>
                 </div>
                 {/*footer*/}
-                <div className="flex items-center justify-end p-2 space-x-4">
+                <div className="flex items-center justify-end p-2 space-x-4 mr-4">
                   <button
                     className="uppercase py-2 my-2 px-4 mt-0 mx-4 bg-white dark:text-gray-800 dark:bg-white hover:dark:bg-gray-100 border-2 border-gray-800 text-gray-800 dark:text-white hover:bg-gray-800 hover:text-white text-md box-shadow-black hover:box-shadow-purple mb-1 ease-linear transition-all duration-150"
                     type="button"

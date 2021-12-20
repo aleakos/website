@@ -2,11 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Transition } from '@tailwindui/react';
 
-// let navStyle =
-//   'plex inline-block py-3 px-3 my-6 text-black dark:text-white lowercase text-lg hover:text-purple-400 ';
-
 let navStyle =
-  'uppercase mb-6 mr-4 ml-4 py-4 my-2 px-4 md:mb-16 bg-transparent bg-green-200 dark:text-gray-800 hover:dark:bg-gray-100 border-2 border-gray-800 text-gray-800 dark:text-white hover:bg-gray-800 hover:text-white text-md box-shadow-black hover:box-shadow-purple';
+  'uppercase mb-0 py-4 px-4 bg-transparent hover:bg-white dark:text-gray-800 hover:dark:bg-gray-100 border-t border-white hover:text-gray-800 dark:text-white bg-gray-800 text-white text-md';
 
 const SidebarModal = () => {
   const [showModal, setShowModal] = useState(false);
@@ -42,11 +39,11 @@ const SidebarModal = () => {
             <div
               ref={ref}
               onClick={() => console.log('clicked')}
-              className="border-0 shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none"
+              className=" relative flex flex-col w-full bg-gray-800 outline-none focus:outline-none"
             >
               {/*header*/}
               <div className="flex items-start justify-between p-5">
-                <h3 className="plex text-4xl font-semibold">menu.</h3>
+                <h3 className="text-green-200 plex text-4xl">menu.</h3>
                 <button
                   className="plex inline-block p-1 ml-auto bg-transparent border-0 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                   onClick={() => setShowModal(false)}
@@ -65,7 +62,7 @@ const SidebarModal = () => {
                   onClick={() => setShowModal(false)}
                   key={'sidebar-home'}
                 >
-                  home
+                  <span className="ml-2">home</span>
                 </NavLink>
                 <NavLink
                   exact
@@ -74,7 +71,7 @@ const SidebarModal = () => {
                   onClick={() => setShowModal(false)}
                   key={'sidebar-post'}
                 >
-                  Blog Posts
+                  <span className="ml-2">blog posts</span>
                 </NavLink>
                 <NavLink
                   exact
@@ -83,7 +80,7 @@ const SidebarModal = () => {
                   onClick={() => setShowModal(false)}
                   key={'sidebar-project'}
                 >
-                  Projects
+                  <span className="ml-2">projects</span>
                 </NavLink>
                 <NavLink
                   exact
@@ -92,7 +89,7 @@ const SidebarModal = () => {
                   onClick={() => setShowModal(false)}
                   key={'sidebar-about'}
                 >
-                  about
+                  <span className="ml-2">about</span>
                 </NavLink>
                 <a
                   href="https://github.com/aleakos"
@@ -101,7 +98,7 @@ const SidebarModal = () => {
                   onClick={() => setShowModal(false)}
                   key={'sidebar-github'}
                 >
-                  github
+                  <span className="ml-2">github</span>
                 </a>
                 <a
                   href="https://www.linkedin.com/in/alexander-leakos-a49081a3/"
@@ -110,7 +107,7 @@ const SidebarModal = () => {
                   onClick={() => setShowModal(false)}
                   key={'sidebar-linkedin'}
                 >
-                  LinkedIn
+                  <span className="ml-2">linkedin</span>
                 </a>
               </nav>
               {/*footer*/}

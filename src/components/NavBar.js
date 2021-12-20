@@ -62,7 +62,7 @@ const NavBar = () => {
 
         <div className="flex items-center">
           <a
-            className="py-3 my-6 hidden md:block "
+            className="mr-4 py-3 my-6 hidden md:block "
             href="https://www.linkedin.com/in/alexander-leakos-a49081a3/"
             onMouseEnter={() => setLinkedInIcon(iconActive)}
             onMouseLeave={() => setLinkedInIcon(iconInactive)}
