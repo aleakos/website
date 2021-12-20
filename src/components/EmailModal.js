@@ -54,7 +54,7 @@ const EmailModal = () => {
                           First Name
                         </label>
                         <input
-                          className="appearance-none block w-full bg-gray-100 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                          className="caret-purple-400 appearance-none block w-full bg-gray-100 text-gray-700 border py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                           id="grid-first-name"
                           type="text"
                           placeholder="Alex"
@@ -68,7 +68,7 @@ const EmailModal = () => {
                           Last Name
                         </label>
                         <input
-                          className="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                          className="caret-purple-400 appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                           id="grid-last-name"
                           type="text"
                           placeholder="Leakos"
@@ -84,7 +84,7 @@ const EmailModal = () => {
                           Email
                         </label>
                         <input
-                          className="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                          className="caret-purple-400 appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                           id="email"
                           type="email"
                           placeholder="wellfunded@company.com"
@@ -100,7 +100,7 @@ const EmailModal = () => {
                           Message
                         </label>
                         <textarea
-                          className="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-32 md:h-48 resize-none"
+                          className="caret-purple-400 appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-32 md:h-48 resize-none"
                           id="message"
                           placeholder="We'd like to offer you a new job ..."
                         ></textarea>

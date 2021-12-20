@@ -35,52 +35,57 @@ const SinglePost = () => {
   return (
     <>
       {/* container */}
-      <div className="container mx-auto flex mt-2 items-center">
-        {/* author */}
-        <img
-          className="w-16 h-16 rounded-full mr-4"
-          src={urlFor(singlePost.authorImage).url()}
-          alt="Avatar of Author"
-        />
-        <div className="plex flex-1 px-2">
-          <p className="text-base font-bold text-base md:text-xl leading-none mb-2">
-            {singlePost.authorName}
-          </p>
-          <p className="text-gray-600 text-xs md:text-base">big time cowboy </p>
-        </div>
-        {/* author */}
-      </div>
+
       {/* container */}
-      <div className="container mx-auto flex mt-6 items-center">
+      <div className="mx-auto flex mt-6 items-center justify-center">
         {/* <!--Title--> */}
-        <div className="font-sans">
-          <p className="text-base md:text-sm text-green-400 font-bold hover:text-purple-400">
-            &lt;{' '}
-            <a
-              href="/post"
-              className="plex text-base md:text-sm text-green-400 hover:text-purple-400 font-bold no-underline hover:underline"
-            >
-              back to blog.
-            </a>
-          </p>
-          <h1 className="plex uppercase font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">
-            {singlePost.title}
-          </h1>
-          <p className="plex text-sm md:text-base font-normal text-gray-600">
-            {new Date(singlePost.publishedAt).toLocaleDateString()}
-          </p>
-        </div>
       </div>
       {/* Title */}
-      {/* Block Content */}
-      <div className="lowercase container mx-auto flex mt-2 items-center plex">
-        <BlockContent
-          blocks={singlePost.body}
-          projectId="upmie68t"
-          dataset="production"
-        />
+      <div className="flex ">
+        <div className="flex-none basis-1/6 "></div>
+        <div className="grow flex flex-col">
+          <div className="flex mb-6 items-center">
+            {/* author */}
+            <img
+              className="w-16 h-16 rounded-full mr-4 "
+              src={urlFor(singlePost.authorImage).url()}
+              alt="Avatar of Author"
+            />
+            <div className="plex ">
+              <p className="font-bold text-base md:text-xl leading-none mb-2">
+                {singlePost.authorName}
+              </p>
+              <p className="text-gray-600 text-xs md:text-base">big timer </p>
+            </div>
+            {/* author */}
+          </div>
+          <div className="font-sans">
+            <p className="text-base md:text-sm text-green-400 font-bold hover:text-purple-400">
+              &lt;{' '}
+              <a
+                href="/post"
+                className="plex text-base md:text-sm text-green-400 hover:text-purple-400 font-bold no-underline hover:underline"
+              >
+                back to blog.
+              </a>
+            </p>
+            <h1 className="plex uppercase font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">
+              {singlePost.title}
+            </h1>
+            <p className="plex text-sm md:text-base font-normal text-gray-600">
+              {new Date(singlePost.publishedAt).toLocaleDateString()}
+            </p>
+          </div>
+          <div className="lowercaseflex mt-6 items-center plex">
+            <BlockContent
+              blocks={singlePost.body}
+              projectId="upmie68t"
+              dataset="production"
+            />
+          </div>
+        </div>
+        <div className="flex-none basis-1/6 "></div>
       </div>
-      {/* Block Content */}
     </>
   );
 };
