@@ -14,6 +14,7 @@ const Project = () => {
       description,
       projectType,
       link,
+      github,
       tags
     }`
       )
@@ -30,7 +31,7 @@ const Project = () => {
         <section className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
           {projectData &&
             projectData.map((project, index) => (
-              <article className="plex lowercase relative box-shadow-black-large hover:box-shadow-black-medium bg-green-200 p-14">
+              <article className="plex lowercase relative box-shadow-black-large hover:box-shadow-black-medium bg-green-100 p-14">
                 <h3 className="text-gray-800 text-2xl font-bold mb-4 hover:text-purple-400">
                   <a
                     href={project.link}
@@ -41,7 +42,7 @@ const Project = () => {
                     {project.title}
                   </a>
                 </h3>
-                <div className="text-gray-600 text-xs">
+                <div className="text-gray-600 text-sm">
                   <span className="text-left block">
                     <strong className="font-bold">Finished on</strong>:{' '}
                     {new Date(project.date).toLocaleDateString()}
@@ -53,15 +54,14 @@ const Project = () => {
                   <p className="my-6 text-lg text-gray-600 leading-relaxed">
                     {project.description}
                   </p>
-                  <span role="img" aria-label="right pointer">
-                    👉
-                  </span>{' '}
+                  <span className="text-2xl">👉</span>{' '}
                   <a
-                    href={project.link}
+                    href={project.github}
                     rel="no opener no referrer"
+                    target="_blank"
                     className="plex text-purple-400 text-lg hover:underline hover:text-purple-300"
                   >
-                    View the project.
+                    view the project on github.
                   </a>
                 </div>
               </article>

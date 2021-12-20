@@ -44,9 +44,3 @@ const Post = () => {
 };
 
 export default Post;
-
-{
-  /* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"> */
-}
-
-<li className="py-2 px-4 w-full rounded-t-lg">Profile</li>;

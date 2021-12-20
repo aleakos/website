@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import EmailForm from './EmailForm';
 
 const EmailModal = () => {
   const [showModal, setShowModal] = useState(false);
@@ -111,9 +110,9 @@ const EmailModal = () => {
                   </form>
                 </div>
                 {/*footer*/}
-                <div className="flex items-center justify-end p-6 ">
+                <div className="flex items-center justify-end p-6 space-x-4">
                   <button
-                    className="uppercase py-2 my-2 px-4 md:mt-0 mx-4 bg-transparent bg-white dark:text-gray-800 dark:bg-white hover:dark:bg-gray-100 border-2 border-gray-800 text-gray-800 dark:text-white hover:bg-gray-800 hover:text-white text-md box-shadow-black hover:box-shadow-purple mb-1 ease-linear transition-all duration-150"
+                    className="uppercase py-2 my-2 px-4 md:mt-0 mx-4bg-transparent bg-white dark:text-gray-800 dark:bg-white hover:dark:bg-gray-100 border-2 border-gray-800 text-gray-800 dark:text-white hover:bg-gray-800 hover:text-white text-md box-shadow-black hover:box-shadow-purple mb-1 ease-linear transition-all duration-150"
                     type="button"
                     onClick={() => setShowModal(false)}
                   >

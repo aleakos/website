@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import sanityClient from '../client.js';
 import imageUrlBuilder from '@sanity/image-url';
 import BlockContent from '@sanity/block-content-to-react';
-import BlogPost from './BlogPost.js';
 
 const builder = imageUrlBuilder(sanityClient);
 const urlFor = (source) => {
@@ -22,6 +21,7 @@ const SinglePost = () => {
           _id,
           slug,
             body,
+            publishedAt,
             "authorName": author->name,
             "authorImage": author->image,
           }`
@@ -34,27 +34,53 @@ const SinglePost = () => {
 
   return (
     <>
-      <div class="container mx-auto flex mt-6">
+      {/* container */}
+      <div class="container mx-auto flex mt-2 items-center">
+        {/* author */}
         <img
-          class="w-10 h-10 rounded-full mr-4"
+          class="w-16 h-16 rounded-full mr-4"
           src={urlFor(singlePost.authorImage).url()}
           alt="Avatar of Author"
         />
-        <div class="flex-1 px-2">
+        <div class="plex flex-1 px-2">
           <p class="text-base font-bold text-base md:text-xl leading-none mb-2">
             {singlePost.authorName}
           </p>
-          <p class="text-gray-600 text-xs md:text-base">
-            Minimal Blog Tailwind CSS template by{' '}
+          <p class="text-gray-600 text-xs md:text-base">big time cowboy </p>
+        </div>
+        {/* author */}
+      </div>
+      {/* container */}
+      <div class="container mx-auto flex mt-6 items-center">
+        {/* <!--Title--> */}
+        <div class="font-sans">
+          <p class="text-base md:text-sm text-green-400 font-bold hover:text-purple-400">
+            &lt;{' '}
             <a
-              class="text-green-500 no-underline hover:underline"
-              href="https://www.tailwindtoolbox.com"
+              href="/post"
+              class="plex text-base md:text-sm text-green-400 hover:text-purple-400 font-bold no-underline hover:underline"
             >
-              TailwindToolbox.com
+              back to blog.
             </a>
+          </p>
+          <h1 class="plex uppercase font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">
+            {singlePost.title}
+          </h1>
+          <p class="plex text-sm md:text-base font-normal text-gray-600">
+            {new Date(singlePost.publishedAt).toLocaleDateString()}
           </p>
         </div>
       </div>
+      {/* Title */}
+      {/* Block Content */}
+      <div class="lowercase container mx-auto flex mt-2 items-center plex">
+        <BlockContent
+          blocks={singlePost.body}
+          projectId="upmie68t"
+          dataset="production"
+        />
+      </div>
+      {/* Block Content */}
     </>
   );
 };

@@ -10,7 +10,7 @@ const Landing = () => {
           <div class="flex flex-col">
             <img src="" class="rounded-full w-28 mx-auto" />
             <p class="plex text-3xl my-6 text-center dark:text-white">
-              hi, i&#x27;m alex
+              hi, i&#x27;m alex.
             </p>
             <h2 class="max-w-3xl text-5xl md:text-6xl font-bold mx-auto dark:text-white text-gray-800 text-center py-2">
               not doing a whole lot at the moment.

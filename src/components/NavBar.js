@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { GoMarkGithub } from 'react-icons/go';
-import EmailModal from './Modal';
+import { AiOutlineGithub, AiFillLinkedin } from 'react-icons/ai';
+import EmailModal from './EmailModal';
 
-let iconStylesInactive = {
+let iconInactive = {
   color: 'black',
   fontSize: '2.0em',
 };
 
-let iconStylesActive = {
+let iconActive = {
   color: '#BF62CF',
   fontSize: '2.0em',
 };
@@ -20,7 +20,8 @@ let inactiveNav =
   'plex inline-flex py-3 px-3 my-6 text-black dark:text-white lowercase text-lg lg:flex items-center  hover:text-purple-400 hover:rounded  underline-offset-4 decoration-green-200';
 
 const NavBar = () => {
-  const [iconStyle, setIconStyle] = useState(iconStylesInactive);
+  const [githubIcon, setGitHubIcon] = useState(iconInactive);
+  const [linkedinIcon, setLinkedInIcon] = useState(iconInactive);
 
   return (
     <header className="bg-white">
@@ -58,15 +59,23 @@ const NavBar = () => {
 
         <div className="flex items-center">
           <a
-            className="py-3 px-6 my-6"
-            href="https://github.com/aleakos"
-            onMouseEnter={() => setIconStyle(iconStylesActive)}
-            onMouseLeave={() => setIconStyle(iconStylesInactive)}
+            className="py-3 my-6"
+            href="https://www.linkedin.com/in/alexander-leakos-a49081a3/"
+            onMouseEnter={() => setLinkedInIcon(iconActive)}
+            onMouseLeave={() => setLinkedInIcon(iconInactive)}
             target="_blank"
           >
-            <GoMarkGithub style={iconStyle} />
+            <AiFillLinkedin style={linkedinIcon} />
           </a>
-
+          <a
+            className="py-3 px-6 my-6"
+            href="https://github.com/aleakos"
+            onMouseEnter={() => setGitHubIcon(iconActive)}
+            onMouseLeave={() => setGitHubIcon(iconInactive)}
+            target="_blank"
+          >
+            <AiOutlineGithub style={githubIcon} />
+          </a>
           <EmailModal />
         </div>
       </div>
