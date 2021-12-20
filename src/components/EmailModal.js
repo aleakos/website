@@ -46,7 +46,7 @@ const EmailModal = () => {
                 <div className=" plex relative p-6 flex-auto">
                   <form class="w-full max-w-lg">
                     <div class="flex flex-wrap -mx-3 mb-6">
-                      <div class="w-full md:w-3/4 px-3 mb-6 md:mb-0">
+                      <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                         <label
                           class=" block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                           for="grid-first-name"
@@ -100,26 +100,26 @@ const EmailModal = () => {
                           Message
                         </label>
                         <textarea
-                          class=" no-resize appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
+                          class="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-32 md:h-48 resize-none"
                           id="message"
-                          placeholder="We'd like to offer you a new job opportunity..."
+                          placeholder="We'd like to offer you a new job ..."
                         ></textarea>
                       </div>
                     </div>
-                    <div class="md:flex md:items-center"></div>
+                    <div class="flex items-center"></div>
                   </form>
                 </div>
                 {/*footer*/}
-                <div className="flex items-center justify-end p-6 space-x-4">
+                <div className="flex items-center justify-end p-2 space-x-4">
                   <button
-                    className="uppercase py-2 my-2 px-4 md:mt-0 mx-4bg-transparent bg-white dark:text-gray-800 dark:bg-white hover:dark:bg-gray-100 border-2 border-gray-800 text-gray-800 dark:text-white hover:bg-gray-800 hover:text-white text-md box-shadow-black hover:box-shadow-purple mb-1 ease-linear transition-all duration-150"
+                    className="uppercase py-2 my-2 px-4 mt-0 mx-4 bg-white dark:text-gray-800 dark:bg-white hover:dark:bg-gray-100 border-2 border-gray-800 text-gray-800 dark:text-white hover:bg-gray-800 hover:text-white text-md box-shadow-black hover:box-shadow-purple mb-1 ease-linear transition-all duration-150"
                     type="button"
                     onClick={() => setShowModal(false)}
                   >
                     Close
                   </button>
                   <button
-                    className="uppercase py-2 my-2 px-4 md:mt-0 bg-transparent bg-green-200 dark:text-gray-800 dark:bg-white hover:dark:bg-gray-100 border-2 border-gray-800 text-gray-800 dark:text-white hover:bg-gray-800 hover:text-white text-md box-shadow-black hover:box-shadow-purple mb-1 ease-linear transition-all duration-150"
+                    className="uppercase py-2 my-2 px-4 mt-0 bg-green-200 dark:text-gray-800 dark:bg-white hover:dark:bg-gray-100 border-2 border-gray-800 text-gray-800 dark:text-white hover:bg-gray-800 hover:text-white text-md box-shadow-black hover:box-shadow-purple mb-1 ease-linear transition-all duration-150"
                     type="button"
                     onClick={() => setShowModal(false)}
                   >
