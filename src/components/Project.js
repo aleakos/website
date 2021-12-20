@@ -39,8 +39,8 @@ const Project = () => {
                   <a
                     href={project.link}
                     alt={project.title}
-                    target="_blank"
                     rel="noopener noreferrer"
+                    target="_blank"
                   >
                     {project.title}
                   </a>
@@ -60,8 +60,8 @@ const Project = () => {
                   <span className="text-2xl">👉</span>{' '}
                   <a
                     href={project.github}
-                    rel="no opener no referrer"
                     target="_blank"
+                    rel="no opener no referrer"
                     className="plex font-bold text-purple-400 text-lg hover:underline hover:text-purple-300"
                   >
                     view the project on github.

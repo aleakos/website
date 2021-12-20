@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { AiOutlineGithub, AiFillLinkedin } from 'react-icons/ai';
 import EmailModal from './EmailModal';
-import Sidebar from './Sidebar';
 import SidebarModal from './SidebarModal';
 
 let iconInactive = {
@@ -67,6 +66,7 @@ const NavBar = () => {
             onMouseEnter={() => setLinkedInIcon(iconActive)}
             onMouseLeave={() => setLinkedInIcon(iconInactive)}
             target="_blank"
+            rel="noopener noreferrer"
           >
             <AiFillLinkedin style={linkedinIcon} />
           </a>
@@ -76,6 +76,7 @@ const NavBar = () => {
             onMouseEnter={() => setGitHubIcon(iconActive)}
             onMouseLeave={() => setGitHubIcon(iconInactive)}
             target="_blank"
+            rel="noopener noreferrer"
           >
             <AiOutlineGithub style={githubIcon} />
           </a>

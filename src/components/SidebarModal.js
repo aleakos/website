@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Transition } from '@tailwindui/react';
 
 let navStyle =
   'uppercase mb-0 py-4 px-4 bg-transparent hover:bg-white dark:text-gray-800 hover:dark:bg-gray-100 border-t border-white hover:text-gray-800 dark:text-white bg-gray-800 text-white text-md';
@@ -94,6 +93,7 @@ const SidebarModal = () => {
                 <a
                   href="https://github.com/aleakos"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className={navStyle}
                   onClick={() => setShowModal(false)}
                   key={'sidebar-github'}
@@ -103,6 +103,7 @@ const SidebarModal = () => {
                 <a
                   href="https://www.linkedin.com/in/alexander-leakos-a49081a3/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className={navStyle}
                   onClick={() => setShowModal(false)}
                   key={'sidebar-linkedin'}
@@ -122,9 +123,10 @@ const SidebarModal = () => {
   return (
     <>
       <div className="py-3 px-6 my-6 ">
+        {/* hamburger menu */}
         <button
           onClick={() => setShowModal(true)}
-          className="md:hidden flex flex-col ml-8 hover:text-purple-400"
+          className="md:hidden flex flex-col hover:text-purple-400"
         >
           <span className="w-6 h-1 bg-gray-800 dark:bg-white mb-1"></span>
           <span className="w-6 h-1 bg-gray-800 dark:bg-white mb-1"></span>
