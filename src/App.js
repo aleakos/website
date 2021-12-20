@@ -11,11 +11,21 @@ const App = () => {
     <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route element={<Landing />} path="/" exact />
-        <Route element={<About />} path="/about" exact />
-        <Route element={<SingleBlog />} path="/post/:slug" exact />
-        <Route element={<Project />} path="/project" exact />
-        <Route element={<PostList />} path="/post" exact />
+        <Route element={<Landing />} path="/" exact key={'app-home'} />
+        <Route element={<About />} path="/about" exact key={'app-about'} />
+        <Route
+          element={<SingleBlog />}
+          path="/post/:slug"
+          exact
+          key={'app-single-blog'}
+        />
+        <Route
+          element={<Project />}
+          path="/project"
+          exact
+          key={'app-project'}
+        />
+        <Route element={<PostList />} path="/post" exact key={'app-post'} />
       </Routes>
     </BrowserRouter>
   );
