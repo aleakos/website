@@ -14,10 +14,10 @@ let iconActive = {
 };
 
 let activeNav =
-  'plex inline-flex py-3 px-3 my-6 text-black dark:text-white lowercase text-lg lg:flex items-center underline underline-offset-2 decoration-green-200 decoration-8 hover:text-purple-400';
+  'plex inline-flex py-3 px-3 my-6 text-black dark:text-white lowercase text-lg lg:flex items-center underline underline-offset-8 decoration-green-200 decoration-8 hover:text-purple-400';
 
 let inactiveNav =
-  'plex inline-flex py-3 px-3 my-6 text-black dark:text-white lowercase text-lg lg:flex items-center  hover:text-purple-400 hover:rounded  underline-offset-4 decoration-green-200';
+  'plex inline-flex py-3 px-3 my-6 text-black dark:text-white lowercase text-lg lg:flex items-center  hover:text-purple-400 hover:rounded  underline-offset-8 decoration-green-200';
 
 const NavBar = () => {
   const [githubIcon, setGitHubIcon] = useState(iconInactive);
