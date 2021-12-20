@@ -31,7 +31,10 @@ const Project = () => {
         <section className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
           {projectData &&
             projectData.map((project, index) => (
-              <article className="plex lowercase relative box-shadow-black-large hover:box-shadow-black-medium bg-green-200 p-14">
+              <article
+                className="plex lowercase relative box-shadow-black-large hover:box-shadow-black-medium bg-green-200 p-14"
+                key={project.title}
+              >
                 <h3 className="text-gray-800 text-2xl font-bold mb-4 hover:text-purple-400">
                   <a
                     href={project.link}

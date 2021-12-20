@@ -11,21 +11,21 @@ const App = () => {
     <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route element={<Landing />} path="/" exact key={'app-home'} />
-        <Route element={<About />} path="/about" exact key={'app-about'} />
+        <Route element={<Landing />} exact path="/" key={'app-home'} />
+        <Route element={<About />} exact path="/about" key={'app-about'} />
         <Route
           element={<SingleBlog />}
-          path="/post/:slug"
           exact
+          path="/post/:slug"
           key={'app-single-blog'}
         />
         <Route
           element={<Project />}
-          path="/project"
           exact
+          path="/project"
           key={'app-project'}
         />
-        <Route element={<PostList />} path="/post" exact key={'app-post'} />
+        <Route element={<PostList />} exact path="/post" key={'app-post'} />
       </Routes>
     </BrowserRouter>
   );
