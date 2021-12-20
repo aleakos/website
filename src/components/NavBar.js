@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { AiOutlineGithub, AiFillLinkedin } from 'react-icons/ai';
 import EmailModal from './EmailModal';
+import Sidebar from './Sidebar';
+import SidebarModal from './SidebarModal';
 
 let iconInactive = {
   color: 'black',
@@ -55,11 +57,7 @@ const NavBar = () => {
           >
             about
           </NavLink>
-          <button class="md:hidden flex flex-col ml-8">
-            <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"></span>
-            <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"></span>
-            <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"></span>
-          </button>
+          <SidebarModal />
         </nav>
 
         <div className="flex items-center">
