@@ -31,7 +31,7 @@ const SidebarModal = () => {
       <>
         <div
           div
-          className="fixed inset-0 h-screen w-full md:w-1/2 z-50 outline-none focus:outline-none"
+          className="fixed inset-0 h-screen w-full lg:w-1/2 z-50 outline-none focus:outline-none"
         >
           <div className="relative">
             {/*content*/}
