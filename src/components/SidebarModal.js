@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 
 let navStyle =
-  'uppercase mb-0 py-4 px-4 bg-transparent hover:bg-white dark:text-gray-800 hover:dark:bg-gray-100 border-t border-white hover:text-gray-800 dark:text-white bg-gray-800 text-white text-md';
+  'uppercase mb-0 py-5 px-4 bg-transparent hover:bg-green-200 dark:text-gray-800 hover:dark:bg-gray-100 border-t border-white hover:text-gray-800 dark:text-white bg-gray-800 text-white text-md';
 
 const SidebarModal = () => {
   const [showModal, setShowModal] = useState(false);
@@ -111,6 +111,12 @@ const SidebarModal = () => {
                   <span className="ml-2">linkedin</span>
                 </a>
               </nav>
+              <div
+                className="px-5 py-4 text-green-200 plex text-2xl border-t-2 border-white hover:bg-purple-400 hover:text-white hover:cursor-pointer"
+                onClick={() => setShowModal(false)}
+              >
+                exit.
+              </div>
               {/*footer*/}
             </div>
           </div>
