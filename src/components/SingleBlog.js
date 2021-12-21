@@ -34,15 +34,12 @@ const SinglePost = () => {
 
   return (
     <>
-      {/* container */}
-
-      {/* container */}
       <div className="mx-auto flex mt-6 items-center justify-center">
         {/* <!--Title--> */}
       </div>
       {/* Title */}
       <div className="flex ">
-        <div className="flex-none basis-1/6 "></div>
+        <div className="flex-none basis-1/12 md:basis-1/6 "></div>
         <div className="grow flex flex-col">
           <div className="flex mb-6 items-center">
             {/* author */}
@@ -84,7 +81,7 @@ const SinglePost = () => {
             />
           </div>
         </div>
-        <div className="flex-none basis-1/6 "></div>
+        <div className="flex-none basis-1/12 md:basis-1/6 "></div>
       </div>
     </>
   );
