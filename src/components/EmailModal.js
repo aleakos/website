@@ -2,10 +2,6 @@ import React, { useState } from 'react';
 
 const EmailModal = () => {
   const [showModal, setShowModal] = useState(false);
-  const [email, setEmail] = useState('');
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [message, setMessage] = useState('');
 
   return (
     <>
@@ -25,8 +21,8 @@ const EmailModal = () => {
         <span className=" plex text-lg ml-3 mt-1">aleakos@gmail.com</span>
       </div>
       {showModal ? (
-        <>
-          <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+        <form action="POST" data-netlify="true">
+          <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none fields">
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
               {/*content*/}
               <div className="border-0 shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
@@ -130,7 +126,7 @@ const EmailModal = () => {
             </div>
           </div>
           <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
-        </>
+        </form>
       ) : null}
     </>
   );
