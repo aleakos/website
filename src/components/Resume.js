@@ -67,7 +67,6 @@ const Resume = () => {
               {' '}
               Master's of Software Engineering, University of Calgary
             </p>
-
             <p className="font-bold mb-2 lg:mb-2 lg:float-right">
               Expected 2022
             </p>
@@ -101,14 +100,16 @@ const Resume = () => {
                 </div>
                 <div>
                   <div className="text-m">
-                    <div class="flow-root">
-                      <p className="float-left font-bold mb-2">
+                    <div class="lg:flow-root">
+                      <p className="lg:float-left font-bold mb-2">
                         {' '}
                         Co-Founder/Software Developer/Operations & Finance
                         Manager
                       </p>
 
-                      <strong className="float-right">2019-2021</strong>
+                      <p className="font-bold mb-2 lg:mb-2 lg:float-right">
+                        2019-2021
+                      </p>
                     </div>
                     <ul>
                       <li className="mb-2 list-disc  list-inside">
@@ -175,12 +176,12 @@ const Resume = () => {
                 </div>
               </div>
               <div>
-                <div class="flow-root">
-                  <p className="float-left font-bold mb-2 plex">
-                    Senior Analyst
-                  </p>
+                <div class="lg:flow-root">
+                  <p className="lg:float-left font-bold mb-2">Senior Analyst</p>
 
-                  <strong className="float-right plex">2017-2019</strong>
+                  <p className="font-bold mb-2 lg:mb-2 lg:float-right">
+                    2017-2019
+                  </p>
                 </div>
                 <ul>
                   <li className="mb-2 list-disc  list-inside">
@@ -214,11 +215,13 @@ const Resume = () => {
                 </a>
               </div>
               <div>
-                <div class="flow-root">
-                  <p className="float-left font-bold mb-2 plex">
+                <div class="lg:flow-root">
+                  <p className="lg:float-left font-bold mb-2">
                     Research Associate
                   </p>
-                  <strong className="float-right plex">2016-2017</strong>
+                  <p className="font-bold mb-2 lg:mb-2 lg:float-right">
+                    2016-2017
+                  </p>
                 </div>
                 <div>
                   <div>
@@ -248,11 +251,13 @@ const Resume = () => {
                   </a>
                 </div>
                 <div>
-                  <div class="flow-root">
-                    <p className="float-left font-bold mb-2 plex">
+                  <div class="lg:flow-root">
+                    <p className="lg:float-left font-bold mb-2">
                       Opertations Engineering Intern
                     </p>
-                    <strong className="float-right plex">2014-2015</strong>
+                    <p className="font-bold mb-2 lg:mb-2 lg:float-right">
+                      2014-2015
+                    </p>
                   </div>
                   <div>
                     <ul>
