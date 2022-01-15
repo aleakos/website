@@ -15,7 +15,7 @@ const Resume = () => {
   return (
     <main className="plex">
       <div className="p-10 container mx-auto relative">
-        <h1 className="text-3xl md:text-4xl lg:text-6xl xl:text-7xl text-gray-800 mb-22 text-center">
+        <h1 className="text-3xl md:text-4xl lg:text-6xl xl:text-7xl text-gray-800 mb-22 md:text-center">
           Alexander Leakos
         </h1>
         <div
