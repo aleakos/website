@@ -21,7 +21,7 @@ const EmailModal = () => {
         <span className=" plex text-lg ml-3 mt-1">aleakos@gmail.com</span>
       </div>
       {showModal ? (
-        <form action="POST" data-netlify="true">
+        <form method="POST" data-netlify="true">
           <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none fields">
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
               {/*content*/}
@@ -116,8 +116,8 @@ const EmailModal = () => {
                   </button>
                   <button
                     className="uppercase py-2 my-2 px-4 mt-0 bg-green-200 dark:text-gray-800 dark:bg-white hover:dark:bg-gray-100 border-2 border-gray-800 text-gray-800 dark:text-white hover:bg-gray-800 hover:text-white text-md box-shadow-black hover:box-shadow-purple mb-1 ease-linear transition-all duration-150"
-                    type="button"
-                    onClick={() => setShowModal(false)}
+                    type="submit"
+                    // onClick={() => setShowModal(false)}
                   >
                     Send
                   </button>
