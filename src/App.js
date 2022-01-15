@@ -6,6 +6,7 @@ import NavBar from './components/NavBar';
 import Landing from './components/Landing';
 import PostList from './components/PostList';
 import Resume from './components/Resume';
+import Download from './components/ResumePdf';
 
 const App = () => {
   return (
@@ -30,6 +31,12 @@ const App = () => {
           element={<Resume />}
           exact
           path="/resume"
+          key={'resume-project'}
+        />
+        <Route
+          element={<Download />}
+          exact
+          path="/resume/download"
           key={'resume-project'}
         />
         <Route element={<PostList />} exact path="/post" key={'app-post'} />
