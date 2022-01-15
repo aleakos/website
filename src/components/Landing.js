@@ -15,7 +15,12 @@ const Landing = () => {
             company founder and full stack developer. working on a master's in
             software engineering.
           </h2>
-          <span className="text-5xl mt-4">👇</span>{' '}
+          <span
+            className="animate-bounce text-5xl mt-4 hover:animate-[wiggle_1s_ease-in-out_infinite]"
+            onClick="animate-[wiggle_1s_ease-in-out_infinite]"
+          >
+            👇
+          </span>{' '}
           <div className="flex items-center justify-center">
             <Link
               to="/project"
