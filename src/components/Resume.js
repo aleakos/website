@@ -4,7 +4,7 @@ let activeSection =
   'text-2xl md:text-4xl lg:text-4xl xl:text-4xl text-gray-800 mb-2 mt-6 border-b-8 border-green-200';
 
 let inactiveSection =
-  'text-2xl md:text-4xl lg:text-4xl xl:text-4xl text-gray-800 mb-2 mt-6 border-b-2 border-grey-200';
+  'text-2xl md:text-4xl lg:text-4xl xl:text-4xl text-gray-800 mb-4 mt-6 border-b-2 border-grey-200';
 
 const Resume = () => {
   const [summary, setSummary] = useState(inactiveSection);
@@ -23,7 +23,7 @@ const Resume = () => {
           onMouseLeave={() => setSummary(inactiveSection)}
         >
           <h2 className={summary}>Summary</h2>
-          <p className="mb-6 mt-6">
+          <p>
             Software Developer with 2+ years of experience leading the design,
             development, and deployment of full stack eCommerce solutions.
             Focused on working with teams solving comproblems for high
@@ -85,16 +85,18 @@ const Resume = () => {
         >
           <h2 className={experience}>Relevant Experience</h2>
           <ul>
-            <li className="mb-2">
+            <li>
               <div>
-                <a
-                  href="https://www.bessiebox.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-purple-400 text-xl font-bold"
-                >
-                  Bessie Box
-                </a>
+                <div className="mb-2">
+                  <a
+                    href="https://www.bessiebox.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-purple-400 text-xl font-bold"
+                  >
+                    Bessie Box
+                  </a>
+                </div>
                 <div>
                   <div className="text-m">
                     <div class="flow-root">
@@ -158,15 +160,17 @@ const Resume = () => {
               </div>
             </li>
             <li>
-              <div className="mt-6">
-                <a
-                  href="https://www.roynat.com/ca/en/who-we-are/equity-partners.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-purple-400 text-xl mb-6 font-bold"
-                >
-                  Roynat Equity Partners
-                </a>
+              <div className="mt-6 mb-2">
+                <div className="">
+                  <a
+                    href="https://www.roynat.com/ca/en/who-we-are/equity-partners.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-purple-400 text-xl mb-6 font-bold"
+                  >
+                    Roynat Equity Partners
+                  </a>
+                </div>
               </div>
               <div>
                 <div class="flow-root">
@@ -197,7 +201,7 @@ const Resume = () => {
               </div>
             </li>
             <li>
-              <div className="mt-6">
+              <div className="mt-6 mb-2">
                 <a
                   href="https://foragecapitalpartners.com/"
                   target="_blank"
@@ -231,7 +235,7 @@ const Resume = () => {
             </li>
             <li>
               <div>
-                <div className="mt-6">
+                <div className="mt-6 mb-2">
                   <a
                     href="https://www.paramountres.com/"
                     target="_blank"
