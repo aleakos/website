@@ -26,7 +26,7 @@ const Resume = () => {
           <p>
             Software Developer with 2+ years of experience leading the design,
             development, and deployment of full stack eCommerce solutions.
-            Focused on working with teams solving comproblems for high
+            Focused on working with teams solving complex problems for high
             performance, user-focused platforms that unlock efficiency and
             productivity for customers at scale.
           </p>
@@ -62,16 +62,18 @@ const Resume = () => {
           onMouseLeave={() => setEducation(inactiveSection)}
         >
           <h2 className={education}>Education</h2>
-          <div class="flow-root plex">
-            <p className="float-left mb-2">
+          <div class="lg:flow-root">
+            <p className="lg:float-left mb-2">
               {' '}
               Master's of Software Engineering, University of Calgary
             </p>
 
-            <strong className="float-right">Expected 2022</strong>
+            <p className="font-bold mb-2 lg:mb-2 lg:float-right">
+              Expected 2022
+            </p>
           </div>
-          <div class="flow-root plex">
-            <p className="float-left ">
+          <div class="lg:flow-root">
+            <p className="lg:float-left ">
               {' '}
               Bachelor of Science in Mechanical Engineering, University of
               Calgary
