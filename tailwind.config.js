@@ -121,7 +121,6 @@ module.exports = {
     plugins: [
       require('@tailwindcss/typography'),
       require('@tailwindui/react'),
-      require('@themesberg/flowbite/plugin'),
     ],
   },
 };

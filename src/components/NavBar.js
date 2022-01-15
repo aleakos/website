@@ -35,13 +35,13 @@ const NavBar = () => {
           >
             aleakos
           </NavLink>
-          <NavLink
+          {/* <NavLink
             exact
             to="/post"
             className={({ isActive }) => (isActive ? activeNav : inactiveNav)}
           >
             Blog Posts
-          </NavLink>
+          </NavLink> */}
           <NavLink
             exact
             to="/project"
@@ -49,12 +49,19 @@ const NavBar = () => {
           >
             Projects
           </NavLink>
-          <NavLink
+          {/* <NavLink
             exact
             to="/about"
             className={({ isActive }) => (isActive ? activeNav : inactiveNav)}
           >
             about
+          </NavLink> */}
+          <NavLink
+            exact
+            to="/resume"
+            className={({ isActive }) => (isActive ? activeNav : inactiveNav)}
+          >
+            resume
           </NavLink>
           <SidebarModal />
         </nav>

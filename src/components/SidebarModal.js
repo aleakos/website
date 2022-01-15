@@ -63,7 +63,7 @@ const SidebarModal = () => {
                 >
                   <span className="ml-2">home</span>
                 </NavLink>
-                <NavLink
+                {/* <NavLink
                   exact
                   to="/post"
                   className={navStyle}
@@ -71,7 +71,7 @@ const SidebarModal = () => {
                   key={'sidebar-post'}
                 >
                   <span className="ml-2">blog posts</span>
-                </NavLink>
+                </NavLink> */}
                 <NavLink
                   exact
                   to="/project"
@@ -81,7 +81,7 @@ const SidebarModal = () => {
                 >
                   <span className="ml-2">projects</span>
                 </NavLink>
-                <NavLink
+                {/* <NavLink
                   exact
                   to="/about"
                   className={navStyle}
@@ -89,6 +89,15 @@ const SidebarModal = () => {
                   key={'sidebar-about'}
                 >
                   <span className="ml-2">about</span>
+                </NavLink> */}
+                <NavLink
+                  exact
+                  to="/resume"
+                  className={navStyle}
+                  onClick={() => setShowModal(false)}
+                  key={'sidebar-resume'}
+                >
+                  <span className="ml-2">resume</span>
                 </NavLink>
                 <a
                   href="https://github.com/aleakos"
